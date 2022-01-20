@@ -1,16 +1,10 @@
 #ifndef STUDENT_H
 #define STUDENT_H
+#include "human.h"
 
-
-class Student {
+class Student : public Human {
 private:
-    char name[20];
-    int age;
     float rating;
-public:
-    Student();
-    Student(char n[], int a, float r);
-    void print();
 };
 
 #endif // STUDENT_H
