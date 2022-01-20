@@ -9,9 +9,12 @@ Pudge::Pudge()
 
 }
 void Pudge::MeatHoock(Unit &enemy) {
-    int huk = this->damage * 1.8;
-    enemy.health -= huk;
+    int uron = this->damage * 1.8 * (enemy.armor / 100.0 );
+    enemy.health -= uron;
     cout << this->name << " hukaet " << enemy.name
-         << " i nanosit " << huk << " urona"
+         << " i nanosit " << uron << " urona"
          << endl;
+    cout << this->name << ":" << this->health << endl;
+    cout << enemy.name << ":" << enemy.health << endl;
+    cout << endl;
 }
