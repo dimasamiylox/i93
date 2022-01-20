@@ -14,3 +14,4 @@ void Unit::attack(Unit &enemy) {
          << " i nanosit " << this->damage << " urona"
          << endl;
 }
+

@@ -6,7 +6,7 @@
 using namespace std;
 
 class Unit {
-private:
+public:
     int health;
     int armor;
     int damage;
@@ -14,6 +14,7 @@ private:
 public:
     Unit();
     void attack(Unit &enemy);
+
 };
 
 #endif // UNIT_H

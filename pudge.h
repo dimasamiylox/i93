@@ -5,6 +5,7 @@
 class Pudge : public Unit {
 public:
     Pudge();
+    void MeatHoock(Unit &enemy);
 };
 
 #endif // PUDGE_H
