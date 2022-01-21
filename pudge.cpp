@@ -8,7 +8,7 @@ Pudge::Pudge()
     strcpy(this->name, "Pudge");
 
 }
-void Pudge::MeatHoock(Unit &enemy) {
+    void Pudge::MeatHoock(Unit &enemy) {
     int uron = this->damage * 1.8 * (enemy.armor / 100.0 );
     enemy.health -= uron;
     cout << this->name << " hukaet " << enemy.name
@@ -17,4 +17,8 @@ void Pudge::MeatHoock(Unit &enemy) {
     cout << this->name << ":" << this->health << endl;
     cout << enemy.name << ":" << enemy.health << endl;
     cout << endl;
+}
+
+void Pudge::spell_1(Unit &enemy) {
+    this->MeatHoock(enemy);
 }

@@ -19,3 +19,6 @@ void Unit::attack(Unit &enemy) {
     cout << endl;
 }
 
+void Unit::spell_1(Unit &enemy) {
+    cout << "No spell" << endl;
+}
